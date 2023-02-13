@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo HLML DOM</title>
+</head>
+<body>
+    <h1> id="title"Demo HTML DOM</h1>
+    <P> id ="content"This is a paragraph</P>
+    <ul> id = "list lesson"
+        <li>lesson 6: variable, data and operator
+            lesson 7: practice variable, data type and operator
+        </li>
+
+    </ul>
+    <script>
+        //tìm kiếm element trong tài liệu
+        //trả về element có id đã chỉ định
+       let titleElement = document.getElementById("title");
+       console.log(titleElement);
+       console.log(titleElement.innerHTLM);
+       //Demo HLTM Dom -> lesson 8 = demo hltm dom
+       titleElement.innerHTML = "lesson 8 - demo hltm dom";
+
+       //change text color of h1tag
+       titleElement.style.color = "red";
+
+    //this is a paragraph -> 
+    //with HTML DOM, we can change the content of a html tag
+    let paragraphElement = doccument.getElementById("content");
+    paragraphElement.innerHTLM = "with HTML DOM, we can change the content of a html tag";
+
+    //change background color of paragraph tag
+    paragraphElement.style.color = "green";
+
+    //add new "li" element to "ul"
+
+
+    </script>
+</body>
+</html>
